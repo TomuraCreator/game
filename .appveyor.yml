@@ -1,10 +1,10 @@
 image: Ubuntu1804  # образ для сборки
 
-stack: node 14  # окружение
+stack: node 16  # окружение
 
 branches:
   only:
-    - master  # ветка git
+    - main  # ветка git
 
 cache: node_modules  # кеширование
 
@@ -16,11 +16,9 @@ build: off  # отключаем встроенную в appveyor систему
 build_script:
   - npm run build   # команда сборки
 
-
-
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
-  - git config --global user.name AppVeyor
-  - git config --global user.email ci@appveyor.com
+  - git config --global user.name Codesurfer8
+  - git config --global user.email gamestationbase@gmail.com
   - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
   - npx push-dir --dir=dist --branch=gh-pages --force --verbose

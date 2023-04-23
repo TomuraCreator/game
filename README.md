@@ -1,3 +1,5 @@
-Домашнее задание к занятию "3. Обработка событий"
-[![Build status](https://ci.appveyor.com/api/projects/status/f3omrllewquaptgw?svg=true)](https://ci.appveyor.com/project/AnatolOV/game)
- https://anatolov.github.io/game/
+# Webpack5.
+
+[Руководство по настройке Webpack](https://webpack.js.org/guides/)
+[Руководство по настройке GitHub Actions](https://docs.github.com/en/actions/quickstart)
+![CI](https://github.com/codesurfer8/Game-goblin/actions/workflows/web.yml/badge.svg)
